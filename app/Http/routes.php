@@ -12,3 +12,5 @@ Route::get('/', 'IndexController@index');
 Route::get('contact', 'ContactController@getAdd');
 // Soumettre le formulaire
 Route::post('contact', 'ContactController@postAdd');
+
+// Route::get('messages', 'MessagesController@getAdd');

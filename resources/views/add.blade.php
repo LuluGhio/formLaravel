@@ -8,11 +8,11 @@
 		<div class="panel panel-info">
 			<div class="panel-body"> 
 				{!! Form::open(['url' => 'contact']) !!}
-					<div class="form-group {!! $errors->has('nom') ? 'has-error' : '' !!}">
+					<div class="form-group {!! $errors->has('first_name') ? 'has-error' : '' !!}">
 						{!! Form::text('nom', null, ['class' => 'form-control', 'placeholder' => 'Votre nom']) !!}
 						{!! $errors->first('nom', '<small class="help-block">:message</small>') !!}
 					</div>
-					<div class="form-group {!! $errors->has('prenom') ? 'has-error' : '' !!}">
+					<div class="form-group {!! $errors->has('last_name') ? 'has-error' : '' !!}">
 						{!! Form::text('prenom', null, ['class' => 'form-control', 'placeholder' => 'Votre prénom']) !!}
 						{!! $errors->first('prenom', '<small class="help-block">:message</small>') !!}
 					</div>
@@ -20,7 +20,7 @@
 						{!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Votre email']) !!}
 						{!! $errors->first('email', '<small class="help-block">:message</small>') !!}
 					</div>
-					<div class="form-group {!! $errors->has('texte') ? 'has-error' : '' !!}">
+					<div class="form-group {!! $errors->has('content') ? 'has-error' : '' !!}">
 						{!! Form::textarea ('texte', null, ['class' => 'form-control', 'placeholder' => 'Votre message']) !!}
 						{!! $errors->first('texte', '<small class="help-block">:message</small>') !!}
 					</div>
